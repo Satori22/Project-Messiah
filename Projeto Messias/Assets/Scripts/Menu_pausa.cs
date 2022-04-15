@@ -41,8 +41,6 @@ public class Menu_pausa : MonoBehaviour
 
         else if(pausaLigado && Input.GetButtonDown("Pausa"))
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             Time.timeScale = 1;
             menu.SetActive(false);
             pausaLigado = false;
